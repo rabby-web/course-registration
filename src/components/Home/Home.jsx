@@ -29,9 +29,9 @@ const Home = () => {
         setSelectCourse([...selectCourse, data])
     }
     return (
-        <div className="grid grid-cols-12 container mx-auto">
+        <div className="grid grid-cols-12 mx-2 md:mx-10">
             <div className="col-span-12 md:col-span-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
                 {
                     loadData.map(data => <Carts
                     key={data.id}
