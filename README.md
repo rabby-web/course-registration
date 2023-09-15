@@ -23,13 +23,13 @@ Here is a Course Registration application, in which the status of multiple compo
    and serial number and name of the course
    Dynamically displaying on the display.
 
+4. How many hours will be spent to learn each course is shown in credit on the cards.
+   That is after enrolling in the course
+   Total credit hours are displayed.
+   And if you enroll in multiple courses, the credit hours spent in the courses are added together and displayed as total credit hours.
+
+5. Enrollment in our courses requires a certain amount of payment which is shown on the price cards.
+   After enrolling in the course it is passed to setSelectCourse, and it is stored in course price and displayed as total price.
+   If more than one course is enrolled, the price of all the courses is added and shown in the update price total price
+
 If a course is already enrolled, it will not be enrolled again, after checking the condition, a sweet alert will be displayed and warned.
-
-4.How many hours will be spent to learn each course is shown in credit on the cards.
-That is after enrolling in the course
-Total credit hours are displayed.
-And if you enroll in multiple courses, the credit hours spent in the courses are added together and displayed as total credit hours.
-
-5.Enrollment in our courses requires a certain amount of payment which is shown on the price cards.
-After enrolling in the course it is passed to setSelectCourse, and it is stored in course price and displayed as total price.
-If more than one course is enrolled, the price of all the courses is added and shown in the update price total price
