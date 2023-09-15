@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Carts = ({data,handleClickSelect}) => {
     const {name, image_url,description,price,credit} = data
     return (
-        <div className='m-2 border bg-white rounded shadow-lg p-2 space-y-2'>
+        <div className='m-2 border bg-white rounded-xl shadow-lg p-4 space-y-2'>
             <div>
                 <img className='w-full' src={image_url} alt="" />
             </div>
