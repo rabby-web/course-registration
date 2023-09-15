@@ -9,9 +9,9 @@ const Carts = ({data,handleClickSelect}) => {
             </div>
             <h2 className="text-xl font-semibold">{name}</h2>
             <p className='leading-7'>{description}</p>
-            <div className='flex justify-around'>
+            <div className='flex justify-between'>
                 <div className='flex'>
-                    <img src="./doller.svg" alt="" />
+                    <img src="./usd.svg" alt="" />
                     <h2>Price: {price}</h2>
                 </div>
                 <div className='flex'>

@@ -17,7 +17,17 @@ const Home = () => {
     console.log(loadData)
 
     const handleClickSelect = data => {
-        const newRemaining = remaining - data.credit;
+        const isExist = selectCourse.find(item => item.id == data.id);
+
+        if(isExist){
+            return alert("Name is Already Exist")
+        }
+        else{
+            if(remaining < data.credit){
+                return alert('Credit Hour Remaining and Total Credit Hour Insufficient')
+            }
+            else{
+               const newRemaining = remaining - data.credit;
         setRemaining(newRemaining)
 
         const newCredit = credit + data.credit;
@@ -26,11 +36,13 @@ const Home = () => {
         const newPrice = price + data.price;
         setPrice(newPrice)
 
-        setSelectCourse([...selectCourse, data])
+        setSelectCourse([...selectCourse, data]) 
+            }
+        }
     }
     return (
         <div className="grid grid-cols-12 mx-2 md:mx-10">
-            <div className="col-span-12 md:col-span-8">
+            <div className="col-span-12 md:col-span-9">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
                 {
                     loadData.map(data => <Carts
@@ -41,7 +53,7 @@ const Home = () => {
                 }
                 </div>
             </div>
-            <div className="col-span-12 md:col-span-4">
+            <div className="col-span-12 md:col-span-3">
                 <CartCalculate
                 selectCourse={selectCourse}
                 credit={credit}
