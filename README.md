@@ -35,3 +35,11 @@ Here is a Course Registration application, in which the status of multiple compo
    If more than one course is enrolled, the price of all the courses is added and shown in the update price total price
 
 If a course is already enrolled, it will not be enrolled again, after checking the condition, a sweet alert will be displayed and warned.
+
+## Technologies
+
+- React
+- Tailwind Css
+- React Hot Toast
+- Toastify
+- Daisy UI
